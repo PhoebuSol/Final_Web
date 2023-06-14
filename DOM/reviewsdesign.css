@@ -43,11 +43,6 @@ header p {
 }
 
 
-h2 {
-  font-size: 20px;
-  margin: 0;
-}
-
 ul {
   list-style-type: disc;
   padding-left: 20px;
@@ -71,4 +66,17 @@ li {
     text-align: center;
     color: white;
 
+}
+p
+{
+  font-size: 23px;
+}
+
+
+.line {
+   
+  border: none;
+  border-top: 1px solid white;
+
+ 
 }
