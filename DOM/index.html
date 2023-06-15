@@ -10,15 +10,23 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Aitulines</title>
+    <script src="https://kit.fontawesome.com/501c408ad7.js" crossorigin="anonymous"></script>
+    <title>Review Web Site</title>
 </head>
 <body>
 
-
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
 
 <header class="header">
     <div class="container">
         <div class="header__inner">
+             <i class="fa-solid fa-bars fa-3x" style="color: #ffffff;"  onclick="openNav()"></i>
             <div class="header__logo">blabla</div>
 
             <nav class="nav">
@@ -50,37 +58,89 @@
 </div>
   
   <br>
-    
-<div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-      <div class="card">
-        <img src="blue.jpg" class="card-img-top" alt="woman">
-        <div class="card-body">
-          <h5 class="card-title">Hades</h5>
-          <p class="card-text">Hades is one of the best 
+    <div class="container-fluid d-flex justify-content-center">
+        
+        <div class="row ">
+
+      <div class="spades col-lg-4 col-sm-12">
+        <img src="../img/blue.jpg" style="scale: 75%;" >
+        <div class="overlay">
+            <div class="texton">
+                <h5 >Hades</h5>
+          <p >Hades is one of the best 
             roguelikes and the reason why...</p>
+            </div>
+            
         </div>
+          
       </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="person.jpg" class="card-img-top" alt="man">
-        <div class="card-body">
-          <h5 class="card-title">Dota 2</h5>
-          <p class="card-text">To be just as cool as son of Sparda himself just learn Billie Jean lyrics</p>
+    
+    
+      <div class="spades col-lg-4 col-sm-12">
+        <img src="../img/person.jpg" style="scale: 75%;">
+        <div class="overlay">
+            <div class="texton">
+                <h5 >DMC 5</h5>
+          <p >To be just as cool as son of Sparda himself just learn Billie Jean lyrics</p>
+            </div>
+            
         </div>
+          
+        
       </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="strangers.jpg" class="card-img-top" alt="people">
-        <div class="card-body">
-          <h5 class="card-title">Borderlands 3</h5>
-          <p class="card-text">Borderlands 3 was okay though....</p>
+    
+
+      <div class="spades col-lg-4 col-sm-12">
+        <img src="../img/strangers.jpg" style="scale: 75%;">
+        <div class="overlay">
+            <div class="texton">
+              <h5 >Borderlands 3</h5>
+          <p >Borderlands 3 was okay though....</p>  
+            </div>
+            
         </div>
+          
       </div>
-    </div>
+   
 </div>
+</div>
+
+
+<div class="container-fluid d-flex justify-content-center">
+<div class="row ">
+
+      <div class="hearts col-lg-6 col-sm-12">
+        <img src="../img/blue.jpg" style="scale: 75%;" >
+        <div class="overlay">
+            <div class="texton">
+                <h5 >Hades</h5>
+          <p >Hades is one of the best 
+            roguelikes and the reason why...</p>
+            </div>
+            
+        </div>
+          
+      </div>
+    
+    
+      <div class="hearts col-lg-6 col-sm-12">
+        <img src="../img/person.jpg" style="scale: 75%;">
+        
+        <div class="overlay">
+            <div class="texton">
+                <h5 >DMC 5</h5>
+          <p >To be just as cool as son of Sparda himself just learn Billie Jean lyrics</p>
+            </div>
+            
+        </div>
+          
+        
+      </div>
+    
+   
+</div>
+    </div>
+
 <br>
 <div class="foot">
 <footer class="footer">
@@ -119,6 +179,8 @@
 </div>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script type="text/javascript" src="MainpageJS.js"></script>
 </body>
 </html>
 

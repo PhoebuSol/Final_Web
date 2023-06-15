@@ -26,10 +26,19 @@ $(document).ready(function() {
 
   $('#chat-button').click(function() {
     chatWindow.slideToggle();
+    var message = $('#message-input').val();
+    if (message !== '') {
+      $('#message-input').val('');
+    }
+   
   });
 
   $('#close-button').click(function() {
     chatWindow.slideUp();
+    var message = $('#message-input').val();
+    if (message !== '') {
+      $('#message-input').val('');
+    }
   });
 
   $('#send-button').click(function() {
@@ -41,13 +50,29 @@ $(document).ready(function() {
     }
   });
 
-// Initially show a welcome message in the chat bubble
-  var initialMessage = 'Welcome to our chat!';
-  var initialMessageElement = $('<div class="message">' + initialMessage + '</div>');
-  $('#chat-body').append(initialMessageElement);
+
   
   // Automatically show chat window after 5 seconds
   setTimeout(function() {
     chatWindow.slideDown();
   }, 5000);
+});
+
+
+
+//................................................................
+//
+
+//
+
+const userInput = document.getElementById("message-input");
+const typingDots = document.getElementById("typing-dots");
+let typingTimeout;
+
+userInput.addEventListener("input", function() {
+  clearTimeout(typingTimeout);
+  typingDots.style.display = "block";
+  typingTimeout = setTimeout(function() {
+    typingDots.style.display = "none";
+  }, 1000); // Adjust the delay here (milliseconds)
 });

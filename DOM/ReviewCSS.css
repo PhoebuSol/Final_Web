@@ -87,6 +87,11 @@ h1, h2, h3, h4, h5, h6 {
     height: 850px;
 
     background-image: url("../img/ladymaria.jpg");
+   background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: cover;
     }
 
 
