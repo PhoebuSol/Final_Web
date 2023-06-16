@@ -6,3 +6,13 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+
+var scrollbtn = document.getElementById('gotomiddle');
+scrollbtn.addEventListener('click',scroll)
+
+function scroll()
+{
+
+  window.scrollTo(0, 1350);
+}

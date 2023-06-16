@@ -181,8 +181,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: red;
-
+    background-color: #EA6559;
+opacity: 0.9;
     transition: background .1s linear, color .1s linear;
 }
 
@@ -192,11 +192,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* info */
-.info {
-    text-align: center;
-    padding: 80px 0;
-    background-color: #2D384A;
-}
+ #best
+ {
+background-color:  #2F3252;
+height: 350px;
+
+ }
 
 .info__title {
     font-size: 30px;
@@ -206,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .info__suptitle {
-    font-size: 24px;
+    font-size: 20px;
     color: #fff;
 }
 
@@ -222,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .foot {
   display: flex;
-  background: #333;
+  background:#1C1D3D;
   justify-content: flex-end;
   align-items: flex-end;
   min-height: 50vh;
