@@ -410,3 +410,43 @@ width: 760px;
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+
+
+
+
+#reviewimg
+{
+    width: 250px;
+    height: 150px;
+    
+    border-radius: 15px;
+
+
+}
+
+#reviewtext
+{
+   
+
+
+}
+#reviewrow
+{
+    margin: 40px;
+   
+}
+
+
+.line {
+   
+  border: none;
+  border-top: 1px solid white;
+
+ 
+}
+#main
+{
+    background-color: #2F3252;
+    color: white;
+}
