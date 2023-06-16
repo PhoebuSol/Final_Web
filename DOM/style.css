@@ -169,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Button */
-.btn {
+#gotomiddle {
     display: inline-block;
     vertical-align: top;
     padding: 8px 30px;
@@ -186,10 +186,12 @@ opacity: 0.9;
     transition: background .1s linear, color .1s linear;
 }
 
-.btn:hover {
+#gotomiddle:hover {
     background-color: #fff;
     color: #333;
 }
+
+
 
 /* info */
  #best
@@ -450,4 +452,95 @@ width: 760px;
 {
     background-color: #2F3252;
     color: white;
+}
+
+/*Fixed Music Button-----------------------------------------------*/
+
+
+#main-button
+{
+ border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  line-height: 70px;
+  text-align: center;
+   background-color:  #EA6559;
+  border-color:  #EA6559;
+  color: #fff;
+}
+
+#main-button:hover
+{
+ border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  padding: 0;
+  line-height: 80px;
+  text-align: center;
+   background-color:  #EA6559;
+  border-color:  #EA6559;
+  color: #fff;
+  transition: 0.2 ease-out;
+}
+
+.button-options {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  
+
+}
+
+.button-options.show {
+  display: block;
+}
+.button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+#play-button
+{
+ border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  line-height: 40px;
+  text-align: center;
+   background-color:  #EA6559;
+  border-color:  #EA6559;
+  color: #fff;
+  margin: 5px;
+}
+
+#stop-button
+{
+ border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  line-height: 40px;
+  text-align: center;
+   background-color:  #EA6559;
+  border-color:  #EA6559;
+  color: #fff;
+  margin: 5px;
+}
+
+#repeat-button
+{
+ border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  line-height: 40px;
+  text-align: center;
+   background-color:  #EA6559;
+  border-color:  #EA6559;
+  color: #fff;
+  margin: 5px;
+
 }

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/501c408ad7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Review Web Site</title>
 </head>
 <body>
@@ -39,6 +40,19 @@
     </div>
 </header>
 
+<!----Fixed play music button----->
+
+<div class="button-container">
+  <div class="btn btn-primary" id="main-button"><i class="fa-solid fa-arrows-to-dot fa-2x" style="color: #ffffff;"></i></div>
+  <div class="button-options">
+    <div class="btn" id="play-button"><i class="fa-solid fa-play" style="color: #ffffff;"></i></div>
+    <audio id="audio-player" src="path/to/music.mp3"></audio>
+    <div class="btn" id="stop-button"><i class="fa-solid fa-pause" style="color: #ffffff;"></i></div>
+    <div class="btn" id="repeat-button"><i class="fa-solid fa-repeat" style="color: #ffffff;"></i></div>
+  </div>
+</div>
+
+<!---------------------------------->
 
 <div class="intro" id="audioclickable">
     <div class="container" >
