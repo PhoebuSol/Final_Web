@@ -19,29 +19,40 @@ function scroll()
 
 
 $(document).ready(function() {
+
+  var audioPlayer = $("#audio-player")[0];
+
   $("#main-button").click(function() {
     $(".button-options").toggleClass("show");
   });
 
 
-  $("#play-button").click(function() {
-    var audioPlayer = $("#audio-player")[0]; // Get the audio element
+  $("#play-button").on('click' , function() {
+     // Get the audio element
     if (audioPlayer.paused) {
       audioPlayer.play(); // Play the audio
-    } else {
     }
-      audioPlayer.pause(); // Pause the audio
+      // Pause the audio
   });
 
 
-
-  $("#stop-button").click(function() {
-    // Add functionality for Stop button
-    console.log("Stop button clicked");
+  $("#stop-button").on('click' , function() {
+  
+    if (audioPlayer.paused != true) {
+      audioPlayer.pause(); 
+    }
   });
 
-  $("#repeat-button").click(function() {
+  $("#repeat-button").on('click' , function() {
     // Add functionality for Repeat button
-    console.log("Repeat button clicked");
+    if(audioPlayer.currentTime != 0)
+    {
+      audioPlayer.currentTime = 0;
+      audioPlayer.play()
+    }
+     
+    
+    // Play the audio
+    
   });
 });
