@@ -4,7 +4,7 @@
     body {
       font-family: Arial, sans-serif;
 
-      
+
     }
 
     main {
@@ -58,8 +58,13 @@ li {
 
   background-color: #2F3252;
 }
- 
- .footer 
+
+#images
+{
+   width: 900px;
+}
+
+ .footer
  {
     background-color: #000D1F;
     padding: 20px 0;
@@ -74,9 +79,9 @@ p
 
 
 .line {
-   
+
   border: none;
   border-top: 1px solid white;
 
- 
+
 }
