@@ -310,7 +310,7 @@
 
 .foot {
   display: flex;
-  background: #333;
+  background: #1C1D3D;
   justify-content: flex-end;
   align-items: flex-end;
   min-height: 50vh;
