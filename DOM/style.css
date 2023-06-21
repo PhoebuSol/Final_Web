@@ -544,3 +544,8 @@ width: 760px;
   margin: 5px;
 
 }
+
+.logo {
+  filter: grayscale(100%);
+  width: 100px;
+}

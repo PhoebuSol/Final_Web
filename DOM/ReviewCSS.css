@@ -351,3 +351,7 @@ border-bottom-right-radius: 25px;
     background-positon-x: 0px;
   }
 }
+.logo {
+  filter: grayscale(100%);
+  width: 100px;
+}
