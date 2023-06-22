@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html>
+    
+
+<head>
+  <title>Registration Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <div class="container-fluid text-center " style="background-color:#000D1F; color: white; height: 200px;">
+    <h1 style="padding-top: 50px ;">AituCompany Registration Form</h1>
+  </div>
+
+
+  <div class="container-fluid text-center" style="background-color:  #2F3252  ;">
+    <form style="color: white;">
+    
+<h2>Login Details</h2>
+    <label for="title">Title:</label>
+    <select id="title" name="title">
+      <option value="Mr.">Mr.</option>
+      <option value="Ms.">Ms.</option>
+      <option value="Mrs.">Mrs.</option>
+    </select>
+
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="first-name" required>
+
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="last-name" required><br><br>
+
+    <label for="address">Complete Postal Mailing Address (with Postal Code & Country)</label> <br>
+    <textarea id="address" name="address" rows="6" cols="85" required></textarea><br><br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+   
+
+    <h2>Professional Info</h2>
+    <label for="activity">Desired position:</label>
+    <input type="radio" id="Stage Race" name="activity" value="Runner" required>
+    <label for="Stage Race">Data Manager</label>
+
+    <input type="radio" id="Everest Challenge Marathon (4 day trip)" name="activity" value="Everest Challenge Marathon (4 day trip)">
+    <label for="Everest Challenge Marathon (4 day trip)">Sponsor</label>
+
+    <input type="radio" id="Mt. Everest Bike Rally" name="activity" value="Mt. Everest Bike Rally">
+    <label for="Mt. Everest Bike Rally">IT Developer</label>
+
+    <br></br>
+
+
+    <label for="activity">Choose your soft skills:</label>
+    <input type="checkbox" id="runner" name="activity" value="Runner" required>
+    <label for="runner">Stress ressitence</label>
+
+    <input type="checkbox" id="walker" name="activity" value="Walker">
+    <label for="walker">Communication skills</label>
+
+    <input type="checkbox" id="cyclist" name="activity" value="Cyclist">
+    <label for="cyclist">Enthusaism</label><br><br>
+    <input type="checkbox" id="cyclist" name="activity" value="Cyclist">
+    <label for="cyclist">Positive thinking</label>
+    <input type="checkbox" id="cyclist" name="activity" value="Cyclist">
+    <label for="cyclist">Team management</label>
+
+    <input type="checkbox" id="cyclist" name="activity" value="Cyclist">
+    <label for="cyclist">Delegation skills</label>
+
+    <br></br>
+
+    <label for="t-shirt-size">Experience</label>
+    <input type="radio" id="small" name="t-shirt-size" value="Small">
+    <label for="small">1-2 years</label>
+
+    <input type="radio" id="medium" name="t-shirt-size" value="Medium">
+    <label for="medium">2-4 years</label>
+
+    <input type="radio" id="large" name="t-shirt-size" value="Large">
+    <label for="large">5-7 years</label>
+
+    <input type="radio" id="x-large" name="t-shirt-size" value="X-Large">
+    <label for="x-large">7+</label><br><br>
+
+    <label for="room-sharing">Working environment preferences:</label>
+    <input type="text" id="room-sharing" name="room-sharing"><br><br>
+
+    <label for="room-sharing">Coffee Preference:</label>
+    <select id="room-sharing" name="room-sharing">
+      <option value="single">Single Espresso</option>
+      <option value="double">Double Espresso</option>
+      <option value="triple">Americano</option>
+    </select><br><br>
+
+    <h2>Personal Data</h2>
+  
+    <label for="date-of-birth">Date of Birth:</label>
+    <input type="date" id="date-of-birth" name="date-of-birth" required>
+
+    <label for="age">Age:</label>
+    <input type="text" id="age" name="age" required><br><br>
+
+    <label for="place-of-birth">Place of Birth:</label>
+    <input type="text" id="place-of-birth" name="place-of-birth" required>
+
+    <label for="citizen-of">Citizen of:</label>
+    <input type="text" id="citizen-of" name="citizen-of" required><br><br>
+
+     <label for="fax">Fax:</label>
+    <input type="tel" id="fax" name="fax" pattern="^\d{10}(\(\d{3}\))?$" required>
+
+
+    
+
+   <label for="marital-status">Martial Status:</label>
+    <select id="marital-status" name="marital-status">
+      <option value="single">Single</option>
+      <option value="double">married</option>
+    </select><br><br>
+
+
+    <a href="http://open-world.ch/CIDOC/SummerSchool/PDF/Sample%20condition%20reports.pdf">See all conditions of the deal</a><br><br>
+
+    <label for="agreement">I agree to all terms &amp; conditions:</label>
+    <input type="checkbox" id="agreement" name="agreement" required><br><br>
+    <p>(Please sign printed form before mailing)</p>
+
+    <input type="submit" value="Submit">
+
+
+  </form>
+  </div>
+  
+  <script>
+
+
+    const firstNameInput = document.getElementById("first-name");
+  const lastNameInput = document.getElementById("last-name");
+  const phoneInput = document.getElementById("phone");
+  const ageInput = document.getElementById('age');
+  const form = document.querySelector('form');
+  
+  firstNameInput.addEventListener("input", () => {
+  const regex = /^[a-zA-Z]+$/;
+  if (!regex.test(firstNameInput.value)) {
+    firstNameInput.setCustomValidity("First name must contain only letters from A-Z.");
+  } else {
+    firstNameInput.setCustomValidity("");
+  }
+  });
+  
+  lastNameInput.addEventListener("input", () => {
+  const regex = /^[a-zA-Z]+$/;
+  if (!regex.test(lastNameInput.value)) {
+    lastNameInput.setCustomValidity("Last name must contain only letters from A-Z.");
+  } else {
+    lastNameInput.setCustomValidity("");
+  }
+  });
+  
+  phoneInput.addEventListener("input", () => {
+  const regex = /^8\d{10}$/;
+  if (!regex.test(phoneInput.value)) {
+    phoneInput.setCustomValidity("Phone must start with 8 and contain 10 digits.");
+  } else {
+    phoneInput.setCustomValidity("");
+  }
+  });
+  
+  function validateAge() {
+    const age = parseInt(ageInput.value);
+  
+    if (isNaN(age) || age < 1 || age > 70) {
+      alert('Please enter a valid age between 1 and 70');
+      ageInput.value = '';
+    }
+  }
+  
+  ageInput.addEventListener('blur', validateAge);
+  
+  form.addEventListener('submit', (event) => {
+    const inputs = form.querySelectorAll('input, select, textarea');
+    let isFormValid = true;
+  
+    inputs.forEach((input) => {
+      if (input.value.trim() === '') {
+        isFormValid = false;
+      }
+    });
+  
+    if (!isFormValid) {
+      event.preventDefault();
+      alert('Please fill out all fields.');
+    } else {
+      alert('Congratulations! You have successfully registered.');
+    }
+  });
+  
+  
+  
+    </script>
+
+    <style>
+      
+      input
+      {
+        border-radius: 10px;
+        box-shadow: none;
+        border: none;
+      }
+      textarea
+      {
+        border-radius: 10px;
+      }
+    </style>
+
+ 
+</form>
+</body>
+
+</html>
