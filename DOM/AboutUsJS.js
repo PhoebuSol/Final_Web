@@ -76,3 +76,14 @@ userInput.addEventListener("input", function() {
     typingDots.style.display = "none";
   }, 1000); // Adjust the delay here (milliseconds)
 });
+
+
+const zoomElements = document.querySelectorAll('.sc');
+ zoomElements.forEach((element) => {
+   element.addEventListener('mouseover', () => {
+     element.classList.add('hovered');
+   });
+   element.addEventListener('mouseout', () => {
+      element.classList.remove('hovered');
+   });
+  });

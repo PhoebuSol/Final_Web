@@ -178,7 +178,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-  
+  z-index: 9999;
   }
   
   #chat-button {
@@ -201,6 +201,7 @@
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
+    z-index: 9999;
   }
   
   #chat-header {
@@ -264,6 +265,7 @@
   /*-----------------------------------------------------------------------------------------------*/
   .profile {
     text-align: center;
+    padding-top: 50px;
   }
   
   .profile-picture {
@@ -468,4 +470,43 @@
  width: 50px;
  height: 50px;
  scale: 200%;
+}
+
+
+.sc
+{
+transition: transform 0.3s;
+      
+      transform: scale(1);
+
+}
+.sc:hover {
+    
+     
+      
+      transform: scale(1.2);
+
+}
+
+#content
+{
+text-align: center;
+align-content:center ;
+
+	width: 900px;
+	font-size: 20px;
+}
+.line {
+   
+  border: none;
+  border-top: 1px solid white;
+
+ 
+}
+
+
+#formbtn
+{
+	width: 200px;
+	margin-bottom: 20px;
 }
