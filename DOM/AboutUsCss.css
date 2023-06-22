@@ -269,8 +269,8 @@
   }
   
   .profile-picture {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-color: #e5e5e5;
     display: inline-flex;
@@ -284,12 +284,12 @@
   }
   
   .profile-text h4 {
-    font-size: 18px;
+    font-size: 30px;
     margin-bottom: 5px;
   }
   
   .profile-text p {
-    font-size: 14px;
+    font-size: 20px;
     color: #888888;
   }
   
